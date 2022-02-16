@@ -53,22 +53,27 @@ print(len(rhizome_text)) """
 
 #google searches
 
-"""Example of Python client calling Knowledge Graph Search API."""
+def google_graph_query(search):
+    api_key = 'AIzaSyDg0OU1DRA8ApbW0mqwBZ64eAPyaSYQy-I'
+    query = search
+    service_url = 'https://kgsearch.googleapis.com/v1/entities:search'
+    params = {
+        'query': query,
+        'limit': 5,
+        'indent': True,
+        'key': api_key,
+    }
+    url = service_url + '?' + urllib.parse.urlencode(params)
+    response = json.loads(urllib.request.urlopen(url).read())
+    for element in response['itemListElement']:
+        if ('detailedDescription') in element['result']:
+            if query in element['result']['detailedDescription']['articleBody']:
+                print(element['result']['detailedDescription'])
 
+google_queries = ['Mark Tribe', 'Owen Mundy']
 
-api_key = 'AIzaSyDg0OU1DRA8ApbW0mqwBZ64eAPyaSYQy-I'
-query = 'Mark Tribe'
-service_url = 'https://kgsearch.googleapis.com/v1/entities:search'
-params = {
-    'query': query,
-    'limit': 5,
-    'indent': True,
-    'key': api_key,
-}
-url = service_url + '?' + urllib.parse.urlencode(params)
-response = json.loads(urllib.request.urlopen(url).read())
-for element in response['itemListElement']:
-    if 'artist' in element['result']:
-        print(element['result'])
+google_search = [google_graph_query(u) for u in google_queries]
+
+print(google_search)
 
 #what format do we want the divs into? 
