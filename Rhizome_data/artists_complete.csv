@@ -3,8 +3,8 @@ ID,artistLabel,artistPage,member of,collective page ,Nationality,Gender,Birth,De
 ,11811,https://artbase.rhizome.org/wiki/Q4757,,,,,,,,
 ,220hex,https://artbase.rhizome.org/wiki/Q139,,,Norwegian,M,,,,
 ,6,https://artbase.rhizome.org/wiki/Q340,,,,,,,,
-,: O l g a : : M i n k :,https://artbase.rhizome.org/wiki/Q49,,,Dutch,F,,,,
-,<computerfinearts collection>,https://artbase.rhizome.org/wiki/Q4723,,,Israeli,M,1952,,,500483359
+,: O l g a : : M i n k :,https://artbase.rhizome.org/wiki/Q49,,,Dutch,F,1974,,,
+,Michele Thursz,,<computerfinearts collection>,https://artbase.rhizome.org/wiki/Q4723,,F,,,,
 ,A .,https://artbase.rhizome.org/wiki/Q692,,,,,,,,
 ,A. Andreas,https://artbase.rhizome.org/wiki/Q780,,,Dutch,M,1956,,,
 ,A. Manley,https://artbase.rhizome.org/wiki/Q35,,,,,,,,
@@ -16,7 +16,7 @@ ID,artistLabel,artistPage,member of,collective page ,Nationality,Gender,Birth,De
 ,Aaron Zinman,https://artbase.rhizome.org/wiki/Q603,,,American,M,,,,
 ,Abinadi Meza,https://artbase.rhizome.org/wiki/Q625,,,American,M,1977,,,
 ,Adam Cruces,https://artbase.rhizome.org/wiki/Q809,,,American,M,1985,,,
-,Adam Sammons,https://artbase.rhizome.org/wiki/Q477,,,,,,,,
+,Adam Sammons,https://artbase.rhizome.org/wiki/Q477,,,,M,,,,
 ,Adam Somlai-Fischer,https://artbase.rhizome.org/wiki/Q111,,,,,,,,
 ,Adina Glickstein,https://artbase.rhizome.org/wiki/Q12117,,,,,,,,
 ,Adrian Miles,https://artbase.rhizome.org/wiki/Q119,,,,,,,,
@@ -237,7 +237,7 @@ ID,artistLabel,artistPage,member of,collective page ,Nationality,Gender,Birth,De
 ,Dirk Vekemans,https://artbase.rhizome.org/wiki/Q646,,,,,,,,
 ,Don Ritter,https://artbase.rhizome.org/wiki/Q190,,,,,,,,
 ,Don Sinclair,https://artbase.rhizome.org/wiki/Q691,,,,,,,,
-,Doron Golan,https://artbase.rhizome.org/wiki/Q1007,,,,,,,,
+,Doron Golan,https://artbase.rhizome.org/wiki/Q1007,<computerfinearts collection>,https://artbase.rhizome.org/wiki/Q4723,Israeli,M,1952,,,500483359
 ,Douglas Gast,https://artbase.rhizome.org/wiki/Q924,,,,,,,,
 ,Dr. Margot Krasojevic,https://artbase.rhizome.org/wiki/Q955,,,,,,,,
 ,Dr. Woohoo!,https://artbase.rhizome.org/wiki/Q857,,,,,,,,
