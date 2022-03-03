@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import urllib
 import requests
+import pandas as pd
 
 """ URL = "https://www.moma.org/collection/works/10"
 page = requests.get(URL)
@@ -11,7 +12,7 @@ soup = BeautifulSoup(page.content, "html.parser")
 results = soup.find("div", class_="main-content")
 print(results.text.strip()) """
 
-""" #moma script
+#moma script
 
 def url_to_text_moma(url):
     page = requests.get(url).text
@@ -22,11 +23,13 @@ def url_to_text_moma(url):
 
 #moma urls 
 
-urls = ['https://www.moma.org/collection/works/10', 'https://www.moma.org/collection/works/11', 'https://www.moma.org/collection/works/12']
+#urls = ['https://www.moma.org/collection/works/10', 'https://www.moma.org/collection/works/11', 'https://www.moma.org/collection/works/12']
 
-moma_text = [url_to_text_moma(u) for u in urls]
+#moma_text = [url_to_text_moma(u) for u in urls]
 
-print(moma_text) """
+#print(moma_text) 
+
+
 
 
 #rhizome script 
@@ -53,7 +56,7 @@ print(len(rhizome_text)) """
 
 #google searches
 
-def google_graph_query(search):
+""" def google_graph_query(search):
     api_key = 'AIzaSyDg0OU1DRA8ApbW0mqwBZ64eAPyaSYQy-I'
     query = search
     service_url = 'https://kgsearch.googleapis.com/v1/entities:search'
@@ -74,6 +77,6 @@ google_queries = ['Mark Tribe', 'Owen Mundy']
 
 google_search = [google_graph_query(u) for u in google_queries]
 
-print(google_search)
+print(google_search) """
 
 #what format do we want the divs into? 
