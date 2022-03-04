@@ -1,17 +1,41 @@
-
 import re
 import csv
-
-artists_list = set()
+import pandas as pd
 
 path = './MoMA_data/'
 
-with open(path+'cleaned_artworks.csv','r') as myfile:
-    for row in csv.reader(myfile, delimiter=','):
-        if row[1] not in artists_list:
-           artists_list.add(row[1])
-    print(len(artists_list))
+import csv
+with open(path+'Artworks.csv','r') as fin, open (path+'modern_artworks.csv','w') as modern, open (path+'cont_artworks.csv','w') as cont:
 
+    m_writer = csv.writer(modern, delimiter=',' )
+    c_writer = csv.writer(cont, delimiter=',' )
+    m_writer.writerow(['Title','Artist','ConstituentID','ArtistBio','Nationality','BeginDate','EndDate','Gender','Date','Medium','Dimensions','CreditLine','AccessionNumber','Classification','Department','DateAcquired','Cataloged','ObjectID','URL','ThumbnailURL','Circumference (cm)','Depth (cm)','Diameter (cm)','Height (cm)','Length (cm)','Weight (kg)','Width (cm)','Seat Height (cm)','Duration (sec.)'])
+    c_writer.writerow(['Title','Artist','ConstituentID','ArtistBio','Nationality','BeginDate','EndDate','Gender','Date','Medium','Dimensions','CreditLine','AccessionNumber','Classification','Department','DateAcquired','Cataloged','ObjectID','URL','ThumbnailURL','Circumference (cm)','Depth (cm)','Diameter (cm)','Height (cm)','Length (cm)','Weight (kg)','Width (cm)','Seat Height (cm)','Duration (sec.)'])
+
+
+    for row in csv.reader(fin, delimiter=','):
+
+        if str(row[8]) != "":
+            if  re.match('.*\d\d\d\d.*', row[8]):
+                year = re.findall(r'\d\d\d\d', row[8])
+                row[8] = year[0],
+                if int(year[0]) < 1980:
+                    m_writer.writerow(row) 
+                else:
+                    c_writer.writerow(row)
+            
+            elif "century" in str(row[8]):
+                m_writer.writerow(row) 
+            else:
+                row[8] = "missing"
+                date = row[5]
+                if  len(date)>=3 and date[1] == "0":
+                    date = "missing"
+                    row[6] = "missing"
+
+                    m_writer.writerow(row) #modern has also those artworks by artist having unknown birth-- death date
+                
+                c_writer.writerow(row)
 
 
 """ 
