@@ -34,23 +34,29 @@ def url_to_text_moma(url):
 
 #rhizome script 
 
-""" def url_to_text_rhizome(url):
+def url_to_text_rhizome(url):
     page = requests.get(url).text
     soup = BeautifulSoup(page, "lxml")
-    text = [p.text for p in soup.find(class_="mw-parser-output").find_all('p')]
+    #text = [p.text for p in soup.find(class_="mw-parser-output").find_all('p')]
+    description = [div.text.strip() for div in soup.find(class_="artbase-summary-1").find_all('div')]
+    summary_statement = [div.text.strip() for div in soup.find(class_="artbase-description-1").find_all('div')]
+    accordion = [p.text.strip() for p in soup.find(id="AccordionDescriptionBody").find_all('div')]
     print(url)
-    return text
+    return accordion
 
 #rhizome urls 
 
-with open('query.json') as file:
-    rhizome_dump = json.load(file)
+#with open('query.json') as file:
+#    rhizome_dump = json.load(file)
 
-urls_2 = [link['document_url'] for link in rhizome_dump]
+#urls_2 = [link['document_url'] for link in rhizome_dump]
 
-rhizome_text = [url_to_text_rhizome(u) for u in urls_2]
+#rhizome_text = [url_to_text_rhizome(u) for u in urls_2]
 
-print(len(rhizome_text)) """
+test = 'https://artbase.rhizome.org/wiki/Q3241'
+list = [item for item in url_to_text_rhizome(test)]
+
+print(list[0])
 
 #query ttl dump for artwork label, description label, and documentl_url 
 
