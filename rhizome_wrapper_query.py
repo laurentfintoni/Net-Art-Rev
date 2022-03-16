@@ -7,8 +7,7 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 endpoint_url = "https://query.artbase.rhizome.org/proxy/wdqs/bigdata/namespace/wdq/sparql"
 
 #query to get all artwork information
-
-query = """SELECT ?artwork_page ?artwork_label ?artist_label ?accession ?inception ?summary_url ?description_url ?statement_url
+query_all_artworks = """SELECT ?artwork_page ?artwork_label ?artist_label ?accession ?inception ?summary_url ?description_url ?statement_url
 { 
   ?artwork rdfs:label ?artwork_label ;
    rt:P3 r:Q5 ;
@@ -36,25 +35,8 @@ query = """SELECT ?artwork_page ?artwork_label ?artist_label ?accession ?incepti
 }}
 
 """
-
-def get_results(endpoint_url, query):
-    user_agent = "WDQS-example Python/%s.%s" % (sys.version_info[0], sys.version_info[1])
-    # TODO adjust user agent; see https://w.wiki/CX6
-    sparql = SPARQLWrapper(endpoint_url, agent=user_agent)
-    sparql.setQuery(query)
-    sparql.setReturnFormat(JSON)
-    return sparql.query().convert()
-
-
-results = get_results(endpoint_url, query)
-
-for result in results["results"]["bindings"]:
-    print(result)
-
-
-  """ 
 #artists unique no collectives + person that are members of a collective
-SELECT DISTINCT ?artistLabel ?member ?artistPage ?collective
+query_artists = '''SELECT DISTINCT ?artistLabel ?member ?artistPage ?collective
 WHERE {
 ?artwork rt:P3 r:Q5.
 ?artwork rt:P29 ?artist.
@@ -67,10 +49,10 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 FILTER (?artist not in (r:Q7) )
 }
 ORDER BY ?artistLabel
-}
+}'''
 
 #filter out collectives from the unqiue artists query --> artists unique no collectives
-SELECT DISTINCT ?artistLabel ?artistPage
+query_collective_filter = '''SELECT DISTINCT ?artistLabel ?artistPage
 WHERE {
 ?artwork rt:P3 r:Q5.
 ?artwork rt:P29 ?artist.
@@ -81,5 +63,18 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 FILTER (?artist not in (r:Q7) )
 }
 ORDER BY ?artistLabel
-}
-  """
+}'''
+
+def get_results(endpoint_url, query):
+    user_agent = "WDQS-example Python/%s.%s" % (sys.version_info[0], sys.version_info[1])
+    # TODO adjust user agent; see https://w.wiki/CX6
+    sparql = SPARQLWrapper(endpoint_url, agent=user_agent)
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+    return sparql.query().convert()
+
+
+results = get_results(endpoint_url, query_all_artworks)
+
+for result in results["results"]["bindings"]:
+    print(result)
