@@ -5,12 +5,15 @@ import urllib
 import requests
 import pandas as pd
 
-""" URL = "https://www.moma.org/collection/works/10"
+URL = "https://artbase.rhizome.org/wiki/Q3241"
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, "html.parser")
-results = soup.find("div", class_="main-content")
-print(results.text.strip()) """
+#results = soup.find("div", class_="main-content")
+#description = [div.text.strip() for div in soup.find(class_="artbase-summary-1").find_all('div')]
+#summary_statement = [div.text.strip() for div in soup.find(class_="artbase-description-1").find_all('div')]
+accordion = [p.text.strip() for p in soup.find(id="AccordionDescriptionBody").find_all('div')]
+print(accordion)
 
 #moma script
 
@@ -53,10 +56,10 @@ def url_to_text_rhizome(url):
 
 #rhizome_text = [url_to_text_rhizome(u) for u in urls_2]
 
-test = 'https://artbase.rhizome.org/wiki/Q3241'
-list = [item for item in url_to_text_rhizome(test)]
+#test = 'https://artbase.rhizome.org/wiki/Q3241'
+#list = [item for item in url_to_text_rhizome(test)]
 
-print(list[0])
+#print(list[0])
 
 #query ttl dump for artwork label, description label, and documentl_url 
 
