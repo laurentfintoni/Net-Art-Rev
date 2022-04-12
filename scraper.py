@@ -5,15 +5,15 @@ import urllib
 import requests
 import pandas as pd
 
-URL = "https://artbase.rhizome.org/wiki/Q3241"
+URL = "https://www.moma.org/collection/works/89286"
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, "html.parser")
 #results = soup.find("div", class_="main-content")
 #description = [div.text.strip() for div in soup.find(class_="artbase-summary-1").find_all('div')]
 #summary_statement = [div.text.strip() for div in soup.find(class_="artbase-description-1").find_all('div')]
-accordion = [p.text.strip() for p in soup.find(id="AccordionDescriptionBody").find_all('div')]
-print(accordion)
+#accordion = [p.text.strip() for p in soup.find(id="AccordionDescriptionBody").find_all('div')]
+print(page.status_code)
 
 #moma script
 
