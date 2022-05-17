@@ -22,31 +22,34 @@
 	
 	<main>
 		<nav class="vh-100">
-			<section class="row" id="intro">
+			<section class="wrapper" id="intro">
 				
-				<h1 class="intro__hed">The internet and personal computers changed the world</h1>
-				<h2>Did they have an impact on the make up of art collections?</h2>
+				<h1 class="intro__hed">THE INTERNET AND PERSONAL COMPUTERS CHANGED THE WORLD...</h1>
+				<h2>DID THEY HAVE AN IMPACT ON THE MAKE UP OF ART COLLECTIONS?</h2>					
+				<div class="intro__dek">
+					<div class="col-12 position-relative">
+						<div class="col-8">
+							The advent of the internet and personal computers as tools of communication and creation radically transformed the world we live in over the past 40 years. The impacts of both technologies across various fields and topics have been well documented, including on the art world. 
 					
-				<div class="intro__dek col-3">
-					<div class="bubbleMoma">
-						MoMA's collection features different periods and movements, mainly focused on the 19th and 20th century. 
-					</div>	
-					<div class="bubbleRhz">
-						Rhizome is only focused on net art and spans the past 40 years
-					</div>
-				<div class="intro__dek col-9">
-					<div class="row position-absolute">
+							However, discussion in the latter field is often focused on how the internet and computers have transformed art creation as well as the ways in which memory institutions function and interact with their audiences. Slightly less focus has been given to how the technologies may have impacted how artworks are acquired. 
+						</div>
+						<div class="col-8">
+							Net Art Revolution? aims to look at this particular aspect of the digital revolution by analyzing data from two different NYC-based institutions -- MoMA, representing the more traditional art world, and Rhizome, a smaller institution dedicated to digital-born art and culture, often refered to as net art. Both institutions make data about their collections publicly available -- MoMA in csv and json formats, Rhizome as Linked Open Data -- and this data is used to investigate our primary research question: <span class="Resq">Did the internet and personal computers have an impact on the make up of art collections?</span> 
+						</div>
 						<p>
-							The advent of the internet and personal computers as tools of communication and creation radically transformed the world we live in over the past 40 years. The impacts of both technologies across various fields and topics have been well documented, including on the art world. However, discussion in the latter field is often focused on how the internet and computers have transformed art creation as well as the ways in which memory institutions function and interact with their audiences. Slightly less focus has been given to how the technologies may have impacted how artworks are acquired. Net Art Revolution? aims to look at this particular aspect of the digital revolution by analyzing data from two different NYC-based institutions -- MoMA, representing the more traditional art world, and Rhizome, a smaller institution dedicated to digital-born art and culture, often refered to as net art. Both institutions make data about their collections publicly available -- MoMA in csv and json formats, Rhizome as Linked Open Data -- and this data is used to investigate our primary research question: **Did the internet and personal computers have an impact on the make up of art collections?** 
-
-
-							This project was undertaken by Margherita Donelli, Chiara Catizone, and Laurent Fintoni for the Electronic Publishing and Digital Storytelling (a.y. 2021-2022) final examination, as part of the *Digital Humanities and Digital Knowledge Master's Degree* at the University of Bologna.
-						To answer this question we decided to look at two collections: <span class="moma">MoMA</span>, representing the more traditional art world, and  <span class="rhz">Rhizome</span>, a younger, smaller collection dedicated to net art, the kind of work made possible by the internet and personal computers.
+						To answer this question we decided to look at two collections:
+						</p>
 						
-					</p>
-					<div class="col-4">
+						<div class="bubbleMoma position-absolute">
+							MoMA's collection features different periods and movements, mainly focused on the 19th and 20th century, and representing the more traditional art world
+						</div>	
+						<div class="bubbleRhz position-absolute">
+							Rhizome is only focused on net art and spans the past 40 years. It is a smaller collection dedicated to net art, the kind of work made possible by the internet and personal computers.
+						</div>
+
+						<div class="col-4">
 					
-				</div>
+						</div>
 
 
 
@@ -59,25 +62,36 @@
 		
 
 		<section id="scrolly">
-			<article  class="col-4">
+			<article  class="col-3">
 				<div class="step" data-step="1">
-					
+
+					<h3> Making the data sets comparable</h3> 
+
+					<p>
+						<span class="rhz">Rhizome</span>'s collection is just 1.6% the size of <span class="moma">MoMA</span>'s 😭
+					</p>
+					<p>
+						What can we do about it? 🤔
+					</p>	
+					<p>
+						We decided that we would try and align the two collections by looking at key dates: first time an artwork was created, and the first time it was acquired.
+					</p>
 				</div>
 				<div class="step" data-step="2">
-					<p><h2>Gender DATA</h2></p>
+					<p><h3>Analysis of artist's genders</h3> </p>
 				</div>
 				<div class="step" data-step="3">
-					<p>STEP 2</p>
+					<p><h3>Analysis of artist's Nationality</h3></p>
 				</div>
 				<div class="step" data-step="4">
-					<p>STEP 3</p>
+					<p><h3>Analysis of time variable</h3></p>
 				</div>
 				<div class="step" data-step="5">
-					<p>STEP 4</p>
+					<p><h3>Analysis of scraped text</h3></p>
 				</div>
 			</article>
 
-			<iframe id="figure" class="col-8">
+			<iframe id="figure" class="col-9">
 				<p>0</p>
 			</iframe>
 		</section>

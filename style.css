@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Libre+Franklin:wght@800&family=PT+Serif&display=swap');
 body{
     height: 100vh;
     background: #fffbf9;
     font-size: 20px;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 #scrolly {
@@ -63,7 +62,7 @@ article {
     /* margin: 0 auto 2rem auto; */
     /* background-color: #3b3b3b; */
     background-color: #c33737;
-    /* padding: 1em; */
+    padding: 1em;
  
 }
 
@@ -80,7 +79,7 @@ article {
 .step p {
     text-align: left;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.2em;
 }
 
 
@@ -91,21 +90,25 @@ nav{
 }
 
 h1{
-    font-family: 'MuseoModerno', bold;
-    color: #D96098;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #7986cb;
     font-size: 3.5em;
     /* font-family: 'Open Sans', sans-serif; */
 }
 
 h2{
-    font-family: 'MuseoModerno', bold;
-    color: #38a754;
+    font-family: 'PT Serif', serif;    
+    color: #9ccc65;
     font-size: 2.2em;
-    font-style: oblique;
     text-align: end;
     margin-top: .25em!important;
     margin-bottom: 2.25ex!important;
     padding-right: 2em!important;
+}
+
+h3{
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
 }
 
 iframe{
@@ -128,33 +131,35 @@ iframe{
 }
 
 .intro__dek{
-    font-size: 1.5em;
+    font-size: 1.2em;
+    text-align: justify;
 }
 
 .moma{
     font-weight: bold;
     font-size: 1.5em;
-    color: #9D3550;
+    color: #7986cb;
 }
 
 .rhz{
     font-weight: bold;
     font-size: 1.5em;
-    color: #34B5A7;
+    color: #9ccc65;
 }
 
 .bubbleMoma{
     text-align: center;
     color: white;
     border-radius: 70%;
-    background-color: #9D3550;
+    background-color: #7986cb;
     font-size: 0.75em;
     position: absolute;
     z-index: 1;
-    top: 455px;
-    height:350px;
-    width:350px;
-    padding: 2em;
+    top: 50px;
+    height:310px;
+    width:310px;
+    padding: 3em;
+    right: 203px;
 
 }
 
@@ -162,12 +167,46 @@ iframe{
     text-align: center;
     color: white;
     border-radius: 70%;
-    background-color: #34B5A7;
+    background-color: #9ccc65;
     font-size: 0.75em;
-    top: 750px;
+    top: 400px;
     position: absolute;
-    height:350px;
-    width:350px;
-    padding: 2em;
+    height:315px;
+    width:315px;
+    padding: 3em;
+    right: 0px;
 
 }
+.Resq{
+    font-weight: bold;
+}
+
+
+
+
+/* mapping moma don't know if working*/
+[0,"#0e1123"],
+[0.1 ,"#12172f"],
+[0.2,"#171c3a"],
+[0.3 ,"#1b2246"],
+[0.4 ,"#222a58"],
+[0.5 ,"#394792"],
+[0.6 ,"#4252a9"],
+[0.7 ,"#4455af"],
+[0.8 ,"#5666bd"],
+[0.9 ,"#5c6cc0"],
+[1, "#7381c9"]],
+
+
+/* mapping rhz don't know if working*/
+[0,"#18230c"],
+[0.1 ,"#243512"],
+[0.2,"#314617"],
+[0.3 ,"#3d581d"],
+[0.4 ,"#496a23"],
+[0.5 ,"#557b29"],
+[0.6 ,"#618d2f"],
+[0.7 ,"#6d9f35"],
+[0.8 ,"#79b03a"],
+[0.9 ,"#85c042"],
+[1, "#91c653"]],
