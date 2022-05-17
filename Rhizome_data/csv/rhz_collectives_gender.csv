@@ -1,17 +1,17 @@
 ,index,Gender
-0,"F, M",46
-1,"M, M",29
-2,"M, F",27
+0,"F, M",18
+1,"M, F",15
+2,"M, M",14
 3,"M, M, M",6
-4,"M, F, M",6
-5,"F, F",5
+4,"F, F",4
+5,"M, F, M",3
 6,"F, M, M",3
-7,NB,2
-8,"F, missing",2
-9,"missing, M, F, F, F",1
-10,"missing, M",1
+7,"F, M, M, M, M, F, missing, M, missing, M",1
+8,"F, missing",1
+9,"M, missing",1
+10,"missing, F",1
 11,"F, F, F",1
-12,"missing, F",1
-13,"M, missing",1
-14,"F, M, M, M, M, F, missing, M, missing, M",1
-15,"M, F, F, M, M, M, M",1
+12,"missing, M",1
+13,"missing, M, F, F, F",1
+14,"M, F, F, M, M, M, M",1
+15,NB,1
