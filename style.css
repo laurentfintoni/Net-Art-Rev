@@ -118,7 +118,9 @@ iframe{
 
 
 /* properties for figures */
-
+.time1{
+    margin-top: 200px!important;
+}
 .fig1{
     width: 800px!important;
     height: 50vh!important;
@@ -182,31 +184,6 @@ iframe{
 }
 
 
-
-
-/* mapping moma don't know if working*/
-[0,"#0e1123"],
-[0.1 ,"#12172f"],
-[0.2,"#171c3a"],
-[0.3 ,"#1b2246"],
-[0.4 ,"#222a58"],
-[0.5 ,"#394792"],
-[0.6 ,"#4252a9"],
-[0.7 ,"#4455af"],
-[0.8 ,"#5666bd"],
-[0.9 ,"#5c6cc0"],
-[1, "#7381c9"]],
-
-
-/* mapping rhz don't know if working*/
-[0,"#18230c"],
-[0.1 ,"#243512"],
-[0.2,"#314617"],
-[0.3 ,"#3d581d"],
-[0.4 ,"#496a23"],
-[0.5 ,"#557b29"],
-[0.6 ,"#618d2f"],
-[0.7 ,"#6d9f35"],
-[0.8 ,"#79b03a"],
-[0.9 ,"#85c042"],
-[1, "#91c653"]],
+.container{
+    text-align: center!important;
+}
