@@ -126,6 +126,8 @@ h3{
 }
 
 iframe{
+    height: 100%;
+    width: 100%;
     border: 0;
     overflow-y: hidden;
 }
@@ -410,10 +412,4 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  #pict1 { width: 100%; 
-  }
-
-  #pict2 { width: 100%;
   }
