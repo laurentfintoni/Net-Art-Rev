@@ -12,7 +12,9 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
+p, .card-title{
+  color: black;
+}
 a {
   color: #5846f9;
   text-decoration: none;
@@ -27,6 +29,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
+#spotlight{
+  padding: 2em;
+  color: white;
+  background-color:rgb(82, 157, 255);
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
