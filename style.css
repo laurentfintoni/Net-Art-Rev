@@ -106,14 +106,14 @@ nav{
 .mainTitle{
     font-family: 'Libre Franklin', sans-serif;
     color: #7986cb;
-    font-size: 3.5em;
+    font-size: 2em;
     /* font-family: 'Open Sans', sans-serif; */
 }
 
 h2{
     font-family: 'PT Serif', serif;    
     color: #9ccc65;
-    font-size: 2.2em;
+    font-size: 1.8em;
     text-align: end;
     margin-top: .25em!important;
     margin-bottom: 2.25ex!important;
@@ -149,7 +149,7 @@ iframe{
 }
 
 .intro__dek{
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: justify;
     padding: 0 3em;
 }
@@ -159,13 +159,13 @@ iframe{
 
 .moma{
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #7986cb;
 }
 
 .rhz{
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #9ccc65;
 }
 
