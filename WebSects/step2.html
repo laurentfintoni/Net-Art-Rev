@@ -105,70 +105,54 @@ img {
 
 .fig1{
     width: 100%!important;
-    height: 50vh!important;
+    height: auto!important;
     
 }
 
 .fig2{
     width: 100px!important;
-    height: 250px!important;
+    height: auto!important;
     
 }
 </style>
 <body>
 
   <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+    <li class="nav-item" role="Momafull">
+      <button class="nav-link active" id="Momafull-tab" data-bs-toggle="tab" data-bs-target="#Momafull" type="button" role="tab" aria-controls="Momafull" aria-selected="true">Full MoMA</button>
     </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+    <li class="nav-item" role="MomaBA">
+      <button class="nav-link" id="MomaBA-tab" data-bs-toggle="tab" data-bs-target="#MomaBA" type="button" role="tab" aria-controls="MomaBA" aria-selected="false">Moma before 1983 vs. Moma after 1983 collections</button>
     </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+    <li class="nav-item" role="RhMs">
+      <button class="nav-link" id="RhMs-tab" data-bs-toggle="tab" data-bs-target="#RhMs" type="button" role="tab" aria-controls="RhMs" aria-selected="false">Rhizome vs. Moma sampled</button>
     </li>
   </ul>
+
   <div class="tab-content" id="myTabContent">
 
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-      <div class="mySlides" style="text-align:center">
-        
-        <iframe class="fig1" src="../Plotly_embeds/moma_full_pie.html">
-          
-        </iframe>    
-      </div>
+    <div class="tab-pane fade show active" id="Momafull" role="tabpanel" aria-labelledby="Momafull-tab">
+        <iframe class="fig1" src="../Plotly_embeds/moma_full_pie.html"></iframe>
+    </div>
+    <div class="tab-pane fade " id="MomaBA" role="tabpanel" aria-labelledby="MomaBA-tab">
+      <iframe  class="fig1" src="../Plotly_embeds/moma_b4_pie.html">  </iframe>
+      <iframe  class="fig1" src="../Plotly_embeds/moma_after_pie.html">  </iframe>
     </div>
 
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <div class="mySlides" style="text-align:center">
-        
-        <iframe class="fig1" src="../Plotly_embeds/moma_full_pie.html">
-          
-        </iframe>    
-      </div>
+    <div class="tab-pane fade " id="RhMs" role="tabpanel" aria-labelledby="RhMs-tab">
+      <iframe  class="fig1" src="../Plotly_embeds/rhz_full_pie.html">  </iframe>
+      <iframe  class="fig1" src="../Plotly_embeds/moma_sampled_pie.html">  </iframe>
     </div>
 
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+    </div>
     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
     </div>
   </div>
 
 
-  <div class="mySlides" style="text-align:center">
-    <div class="numbertext">4 / 8</div>
-    <iframe  class="fig1" src="../Plotly_embeds/moma_sunburst.html">
-
-    </iframe>
-    
-  </div>
-
-  <div class="mySlides" style="text-align:center">
-    <div class="numbertext">5 / 8</div>
-    <iframe  class="fig1" src="../Plotly_embeds/rhz_sunburst.html">
-
-    </iframe>
-    
-  </div>
 
   <div class="mySlides" style="text-align:center">
     <div class="numbertext">6 / 8</div>
