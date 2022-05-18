@@ -1,0 +1,8 @@
+﻿ids;labels;parents;counts
+Keywords;Artwork Keywords;;
+Male;Male Artists;Keywords;1200
+Female;Female Artists;Keywords;500
+Male-Work;Work;Male;367
+Female-Work;Work;Female;74
+Work-Count;367;Male-Work;
+Work-Count;367;Female-Work;
