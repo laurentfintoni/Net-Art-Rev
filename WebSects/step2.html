@@ -1,14 +1,16 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  	<link rel="stylesheet" href="style.css">
+
   </head>
 <style>
 body {
   font-family: Arial;
   margin: 0;
+  overflow: hidden;
 }
 
 * {
@@ -105,171 +107,143 @@ img {
 
 .fig1{
     width: 100%!important;
-    height: auto!important;
+    height: 800px!important;
+    overflow: hidden;
+}
+.fig2{
+    height: 50vh!important;
     
 }
 
-.fig2{
-    width: 100px!important;
-    height: auto!important;
+.fig3{
+    height: 50vh!important;
     
+}
+.fig4{
+    width: 50%!important;
+    height: 50vh!important;
+    
+}
+
+.fig5{
+    width: 50%!important;
+    height: 50vh!important;
+    
+}
+.fig7{
+    width: 100%!important;
+    height: 900px!important;
+    overflow: hidden;
 }
 </style>
 <body>
 
-  <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="Momafull">
-      <button class="nav-link active" id="Momafull-tab" data-bs-toggle="tab" data-bs-target="#Momafull" type="button" role="tab" aria-controls="Momafull" aria-selected="true">Full MoMA</button>
-    </li>
-    <li class="nav-item" role="MomaBA">
-      <button class="nav-link" id="MomaBA-tab" data-bs-toggle="tab" data-bs-target="#MomaBA" type="button" role="tab" aria-controls="MomaBA" aria-selected="false">Moma before 1983 vs. Moma after 1983 collections</button>
-    </li>
-    <li class="nav-item" role="RhMs">
-      <button class="nav-link" id="RhMs-tab" data-bs-toggle="tab" data-bs-target="#RhMs" type="button" role="tab" aria-controls="RhMs" aria-selected="false">Rhizome vs. Moma sampled</button>
-    </li>
-  </ul>
+  <nav>
+    <div class="d-flex nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#Momafull" type="button" role="tab" aria-controls="Momafull" aria-selected="true">Full MoMA</button>
+      <button class="nav-link" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#MomaBA" type="button" role="tab" aria-controls="MomaBA" aria-selected="false">Moma before 1983 vs. Moma after 1983 collections</button>
+      <button class="nav-link" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#RhMs" type="button" role="tab" aria-controls="RhMs" aria-selected="false">Rhizome vs. Moma sampled</button>
+      <button class="nav-link" id="nav-four-tab" data-bs-toggle="tab" data-bs-target="#Sb" type="button" role="tab" aria-controls="Sb" aria-selected="false">Collectives coverage</button>
+      <button class="nav-link" id="nav-five-tab" data-bs-toggle="tab" data-bs-target="#MomaGdep" type="button" role="tab" aria-controls="MomaGdep" aria-selected="false">Moma gender representation by department</button>
+      <button class="nav-link" id="nav-six-tab" data-bs-toggle="tab" data-bs-target="#GdepComp" type="button" role="tab" aria-controls="GdepComp" aria-selected="false">Comparison gender representation by department</button>
+      <button class="nav-link" id="nav-seven-tab" data-bs-toggle="tab" data-bs-target="#link1" type="button" role="tab" aria-controls="link1" aria-selected="false">Comparison gender representation by department</button>
+      <button class="nav-link" id="nav-eight-tab" data-bs-toggle="tab" data-bs-target="#Gscatter" type="button" role="tab" aria-controls="Gscatter" aria-selected="false">Genders scatterplots</button>
+      <button class="nav-link" id="nav-nine-tab" data-bs-toggle="tab" data-bs-target="#NBcards" type="button" role="tab" aria-controls="link1NBcards" aria-selected="false">Non-nynary artists</button>
+
+    </div>   
+  </nav>
 
   <div class="tab-content" id="myTabContent">
-
-    <div class="tab-pane fade show active" id="Momafull" role="tabpanel" aria-labelledby="Momafull-tab">
-        <iframe class="fig1" src="../Plotly_embeds/moma_full_pie.html"></iframe>
-    </div>
-    <div class="tab-pane fade " id="MomaBA" role="tabpanel" aria-labelledby="MomaBA-tab">
-      <iframe  class="fig1" src="../Plotly_embeds/moma_b4_pie.html">  </iframe>
-      <iframe  class="fig1" src="../Plotly_embeds/moma_after_pie.html">  </iframe>
-    </div>
-
-    <div class="tab-pane fade " id="RhMs" role="tabpanel" aria-labelledby="RhMs-tab">
-      <iframe  class="fig1" src="../Plotly_embeds/rhz_full_pie.html">  </iframe>
-      <iframe  class="fig1" src="../Plotly_embeds/moma_sampled_pie.html">  </iframe>
-    </div>
-
-    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-
-    </div>
-    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-
-    </div>
-  </div>
-
-
-
-  <div class="mySlides" style="text-align:center">
-    <div class="numbertext">6 / 8</div>
-    <h1>Observation no1:<br>
-    A lot men.<br>
-    We thought so much, maybe the internet didn't change anything? <br>
-    Let's see what else the data can tell us... <br>
-  </h1>
-  </div>
-
-
-  <div class="mySlides row" style="text-align:center">
-    <div class="numbertext">7 / 5</div>
-    <iframe  class="fig1" src="../Plotly_embeds/moma_b4_pie.html">
-
-    </iframe>
-    <iframe  class="fig1" src="../Plotly_embeds/moma_after_pie.html">
-
-    </iframe>
-  </div>
-  
-
-
-  
-  <div class="mySlides row" style="text-align:center">
-    <div class="numbertext">9 / 5</div>
-    <iframe  class="fig1" src="../Plotly_embeds/moma_full_gender_dept_bars.html">
-
-    </iframe>
     
-    <!-- option one and two are the same plot here.... -->
-  </div>
+    <div class="tab-pane fade show active" id="Momafull" role="tabpanel" aria-labelledby="nav-one-tab">
+      <iframe class="fig1" src="../Plotly_embeds/moma_full_pie.html"></iframe>
+      <div>  
+        <h1>Observation no1:</h1>
+        <p>A lot men.</p>
+        <p> We thought so much, maybe the internet didn't change anything?</p>
+        <p>Let's see what else the data can tell us... </p>
+      </div>
+    </div>
 
+    <div class=" tab-pane fade " id="MomaBA" role="tabpanel" aria-labelledby="nav-two-tab">
+      <div class="row d-flex">
+           <iframe  class="h-100  w-50 fig2" src="../Plotly_embeds/moma_b4_pie.html">  </iframe>
+          <iframe  class="h-100  w-50 fig3" src="../Plotly_embeds/moma_after_pie.html">  </iframe>
+      </div>
+    </div>
 
-  <div class="mySlides" style="text-align:center">
-    <div class="numbertext">8 / 5</div>
-    <p>
-    Oh, maybe there was a change. But! MoMA has 8 different departments and they're not all related to computers and the internet. So we selected four departments that are more closely aligned to net art: Photography, Media & Performance, Films, and Drawing & Print.
-  </p>
-  <div class="row">
-    <div class="col-6"></div>
-    <div class="col-6"></div>
-  </div>
-  </div>
-
-  <div class="mySlides row" style="text-align:center">
-    <div class="numbertext">9 / 5</div>
-    <iframe  class="fig1" src="../Plotly_embeds/moma_rhz_depts_compare.html">
-
-    </iframe>
     
-    <p>
-      Well, we can see that Rhizome appears to acquire artworks by gender more evenly across all its departments. Perhaps most interesting is that still image collections are larger in MoMA and that Non Binary artists are only represented in Media & Performance which is most analogous to net art.
-    </p>  
-  </div>
+    <div class=" tab-pane fade " id="RhMs" role="tabpanel" aria-labelledby="nav-three-tab">
+      <div class="row">
+        <iframe  class="h-100  w-50 fig4" src="../Plotly_embeds/rhz_full_pie.html">  </iframe>
+        <iframe  class="h-100  w-50 fig5" src="../Plotly_embeds/moma_sampled_pie.html">  </iframe>
+      </div>        
+    </div>
 
-  <div class="mySlides row" style="text-align:center">
-    <div class="numbertext">9 / 5</div>
-    <h1>
-      Observation no2:<br>
-      The internet revolution didn't change centuries of gender imbalance but it seems to promote better gender balance in collections<br> 
-      However the representation of non binary people remains an issue with only 10 artists in MoMA's collection and 2 in Rhizome.
-    </h1>  
-  </div>
+    <div class=" tab-pane fade " id="Sb" role="tabpanel" aria-labelledby="nav-four-tab">
+      <div class="row d-flex">
+        <iframe  class="h-100  w-50 fig4" src="../Plotly_embeds/moma_sunburst.html">  </iframe>
+        <iframe  class="h-100  w-50 fig5" src="../Plotly_embeds/rhz_sunburst.html">  </iframe>
+      </div>
+    </div>
 
-   <div class="mySlides row" style="text-align:center">
-    <div class="numbertext">9 / 5</div>
-    <h1>
-      Link:<br>
-      After internet comes, how is the situation? Are galleries always improving gender representation? How is the "trend" in the after internet years?
-    </h1>  
-    <h1>
-      To be filled with scatter. <br>
-      - 2007 + trend lines
-    </h1> 
-  </div>
+    <div class=" tab-pane fade " id="MomaGdep" role="tabpanel" aria-labelledby="nav-five-tab">
 
-  <div class="mySlides row" style="text-align:center">
-    <div class="numbertext">9 / 5</div>
-    Cards non binary here or at the end w/ spotlights
-  </div>
-  <div class="caption-container">
-    <p id="caption"></p>
+      <iframe  class="fig7" src="../Plotly_embeds/moma_full_gender_dept_bars.html"></iframe>
+        <p>
+          Oh, maybe there was a change. But! MoMA has 8 different departments and they're not all related to computers and the internet. So we selected four departments that are more closely aligned to net art: Photography, Media & Performance, Films, and Drawing & Print.
+        </p>
+    </div>
+
+    <div class=" tab-pane fade " id="GdepComp" role="tabpanel" aria-labelledby="nav-six-tab">
+
+      <iframe  class="fig7" src="../Plotly_embeds/moma_rhz_depts_compare.html"></iframe>
+        
+        <div class="p-3">  
+          <p>
+            Well, we can see that Rhizome appears to acquire artworks by gender more evenly across all its departments.
+          </p>
+          <p>
+             Perhaps most interesting is that still image collections are larger in MoMA and that Non Binary artists are only represented in Media & Performance which is most analogous to net art.
+          </p>
+          <h1>Observation no2:</h1>
+          <p>The internet revolution didn't change centuries of gender imbalance but it seems to promote better gender balance in collections</p>
+          <p> However the representation of non binary people remains an issue with only 10 artists in MoMA's collection and 2 in Rhizome.</p>
+        </div>
+    </div>
+
+    <div class=" tab-pane fade " id="link1" role="tabpanel" aria-labelledby="nav-seven-tab">
+        <div class="p-3">  
+          <h1>Observation no2:</h1>
+          <p>The internet revolution didn't change centuries of gender imbalance but it seems to promote better gender balance in collections</p>
+          <p> However the representation of non binary people remains an issue with only 10 artists in MoMA's collection and 2 in Rhizome.</p>
+          <h1>Link:</h1>
+          <p>
+            After internet comes, how is the situation? Are galleries always improving gender representation? How is the "trend" in the after internet years?
+          </p>
+        </div>
+    </div>
+    
+    <div class=" tab-pane fade " id="Gscatter" role="tabpanel" aria-labelledby="nav-eight-tab">
+      <h1>
+        <div class="row d-flex">
+          <iframe  class="h-100  w-50 fig2" src="../Plotly_embeds/scatter_moma_acquisitions.html">  </iframe>
+         <iframe  class="h-100  w-50 fig3" src="../Plotly_embeds/moma_after_pie.html">  </iframe>
+     </div>
+        - 2007 + trend lines
+      </h1> 
+    </div>
+
+    <div class=" tab-pane fade " id="NBcards" role="tabpanel" aria-labelledby="nav-nine-tab">
+      <h1>
+        Cards non binary here or at the end w/ spotlights
+      </h1> 
+    </div>
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
     
 </body>
 </html>
