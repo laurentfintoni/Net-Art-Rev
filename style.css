@@ -28,6 +28,17 @@ img {
     vertical-align: middle;
   }
 
+img#pict3 { 
+  width: 50%!important; 
+  }
+
+img#pict4 { 
+  width: 50%!important;
+  }
+
+img#line2  { width: 100%;
+  }
+
 #scrolly {
     position: relative;
     display: -webkit-box;
@@ -413,3 +424,4 @@ iframe#figure{
     justify-content: center;
     align-items: center;
   }
+
