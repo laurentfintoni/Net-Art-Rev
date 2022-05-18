@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  	<link rel="stylesheet" href="style.css">
+
+  </head>
+<body>
+
+  <nav>
+    <div class="col-8 d-flex nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#Momamap" type="button" role="tab" aria-controls="Momamap" aria-selected="true">MoMA Sampled Map</button>
+      <button class="nav-link" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#Rhzmap" type="button" role="tab" aria-controls="Rhzmap" aria-selected="false">Rhizome Map</button>
+      <button class="nav-link" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#Link2" type="button" role="tab" aria-controls="Link2" aria-selected="false">Link 2</button>
+      <button class="nav-link" id="nav-four-tab" data-bs-toggle="tab" data-bs-target="#NSdivide" type="button" role="tab" aria-controls="NSdivide" aria-selected="false">Global Nort/south divide</button>
+      <button class="nav-link" id="nav-five-tab" data-bs-toggle="tab" data-bs-target="#GSartists" type="button" role="tab" aria-controls="GSartists" aria-selected="false">Artists from Global South</button>
+    </div>   
+  </nav>
+
+  <div class="tab-content" id="myTabContent">
+    
+    <div class="tab-pane fade show active" id="Momamap" role="tabpanel" aria-labelledby="nav-one-tab">
+      <iframe class="fig1" src="../../Plotly_embeds/moma_map.html"></iframe>
+      
+    </div>
+
+    <div class=" tab-pane fade " id="Rhzmap" role="tabpanel" aria-labelledby="nav-two-tab">
+           <iframe  class="h-100  w-50 fig2" src="../../Plotly_embeds/rhz_map.html">  </iframe>
+    </div>
+
+    
+    <div class=" tab-pane fade " id="Link2" role="tabpanel" aria-labelledby="nav-three-tab">
+        <div class="p-3">  
+            <h1>Observation no3:</h1>
+            <p> A lot of Global North countries, which we expected.</p>
+            <p> There also seems to be a pretty decent spread of overall nationalities in both collections.</p>
+            <p>
+                Perhaps it would be interesting to look at this using the Global North/South divide, which is today a meaningful way to look at the visibility of countries historically ignored.
+            </p>
+          </div>       
+    </div>
+
+    <div class=" tab-pane fade " id="NSdivide" role="tabpanel" aria-labelledby="nav-four-tab">
+      <div class="row d-flex">
+        <iframe  class="h-100  w-50 fig4" src="../Plotly_embeds/rhz_moma_north_south_bars.html">  </iframe>
+      </div>
+      <div class="h-100  w-50">
+        <h3>Moma's representation of Global South nationalities:</h3>
+        <ul>
+          <li>Before internet: [to be] </li>
+          <li>After internet: [to be] </li>
+        </ul>
+        <p>
+            Obviously the imbalance between north and south is quite drastic. We know what the nationalities of artists in the global north are (short list), but where do artists from the global south come from?
+        </p>
+      </div>
+    </div>
+
+    <div class=" tab-pane fade " id="GSartists" role="tabpanel" aria-labelledby="nav-five-tab">
+
+      <iframe  class="fig7" src="../Plotly_embeds/rhz_moma_north_south_bars_regions.html"></iframe>
+      <div class="p-3">  
+        <h1>Observation no4:</h1>
+        <p> Out of the XXX countries in the global south, there are only XXX represented in both collections.</p>
+        <p>  Just as the internet didn't change gender imbalance, it also doesn't mean that artists from the global south have more access to art institutions in the global north.</p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
