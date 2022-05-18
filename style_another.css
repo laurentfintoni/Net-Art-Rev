@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* All the snapping stuff */
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+/* Other styles */
+section {
+  padding: 1rem;
+  align-items: none;
+  justify-content: none;
+  background-color: darkorchid;
+}
+
+section:nth-child(2n) {
+  background-color: turquoise;
+}
+
+section:nth-child(3n) {
+  background-color: tomato;
+}
