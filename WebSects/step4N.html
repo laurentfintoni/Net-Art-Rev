@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  	<link rel="stylesheet" href="style.css">
+
+  </head>
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: gray;
+  font-weight: bold;
+  font-size: 10em;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(150, 150, 150, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  /* background-color: #222; */
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.fig1{
+    width: 100%!important;
+    height: 800px!important;
+    overflow: hidden;
+}
+.fig2{
+    height: 50vh!important;
+    
+}
+
+.fig3{
+    height: 50vh!important;
+    
+}
+.fig4{
+    width: 50%!important;
+    height: 50vh!important;
+    
+}
+
+.fig5{
+    width: 50%!important;
+    height: 50vh!important;
+    
+}
+.fig7{
+    width: 100%!important;
+    height: 900px!important;
+    overflow: hidden;
+}
+</style>
+<body>
+
+  <nav>
+    <div class="d-flex nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#Momapar" type="button" role="tab" aria-controls="Momapar" aria-selected="true">Relationship among Gender, Nationality & Departments in MoMA's South Globe</button>
+      <button class="nav-link" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#Rhzpar" type="button" role="tab" aria-controls="Rhzpar" aria-selected="false">Relationship among Gender, Nationality & Departments in Rhizomes's South Globe</button>
+      <button class="nav-link" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#Link2" type="button" role="tab" aria-controls="Link2" aria-selected="false">Link 2</button>
+      <button class="nav-link" id="nav-four-tab" data-bs-toggle="tab" data-bs-target="#NSdivide" type="button" role="tab" aria-controls="NSdivide" aria-selected="false">Global Nort/south divide</button>
+      <button class="nav-link" id="nav-five-tab" data-bs-toggle="tab" data-bs-target="#GSartists" type="button" role="tab" aria-controls="GSartists" aria-selected="false">Artists from Global South</button>
+    </div>   
+  </nav>
+
+  <div class="tab-content" id="myTabContent">
+     <!-- togliere overflow-y dai parallel -->
+    <div class="tab-pane fade show active" id="Momapar" role="tabpanel" aria-labelledby="nav-one-tab">
+            <iframe class="fig1" src="../Plotly_embeds/moma_paralle_regions.html"></iframe> 
+    </div>
+
+    <div class=" tab-pane fade " id="Rhzpar" role="tabpanel" aria-labelledby="nav-two-tab">
+        <iframe class="fig1" src="../Plotly_embeds/rhz_paralle_regions.html"></iframe> 
+    </div>
+
+    <div class=" tab-pane fade " id="Link2" role="tabpanel" aria-labelledby="nav-three-tab">
+        <div class="p-3">  
+            
+            <h1>Observation no5:</h1>
+            <p> Aggiungere osservazione 5 che introduce anche la variabile rtemporale in qualche maniera sensata, aspettare plot di Lo per decidere effettivamente come introdurre il tempo a parole, per i dati va bene.</p>
+        </div>       
+    </div>
+    <div class=" tab-pane fade " id="Rhzpar" role="tabpanel" aria-labelledby="nav-two-tab">
+        <iframe class="fig1" src="../Plotly_embeds/rhz_paralle_regions.html"></iframe> 
+    </div>
+
+
+    <div class=" tab-pane fade " id="NSdivide" role="tabpanel" aria-labelledby="nav-four-tab">
+      <div class="row d-flex">
+        <iframe  class="h-100  w-50 fig4" src="../Plotly_embeds/rhz_moma_north_south_bars.html">  </iframe>
+      </div>
+      <div class="h-100  w-50">
+        <h3>Moma's representation of Global South nationalities:</h3>
+        <ul>
+          <li>Before internet: [to be] </li>
+          <li>After internet: [to be] </li>
+        </ul>
+        <p>
+            Obviously the imbalance between north and south is quite drastic. We know what the nationalities of artists in the global north are (short list), but where do artists from the global south come from?
+        </p>
+      </div>
+    </div>
+
+    <div class=" tab-pane fade " id="GSartists" role="tabpanel" aria-labelledby="nav-five-tab">
+
+      <iframe  class="fig7" src="../Plotly_embeds/rhz_moma_north_south_bars_regions.html"></iframe>
+      <div class="p-3">  
+        <h1>Observation no4:</h1>
+        <p> Out of the XXX countries in the global south, there are only XXX represented in both collections.</p>
+        <p>  Just as the internet didn't change gender imbalance, it also doesn't mean that artists from the global south have more access to art institutions in the global north.</p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
