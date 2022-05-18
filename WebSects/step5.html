@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  	<link rel="stylesheet" href="style.css">
+
+  </head>
 <style>
 body {
   font-family: Arial;
   margin: 0;
+  overflow: hidden;
 }
 
 * {
@@ -101,94 +107,61 @@ img {
 
 .fig1{
     width: 100%!important;
+    height: 800px!important;
+    overflow: hidden;
+}
+.fig2{
     height: 50vh!important;
     
 }
 
-.fig2{
-    width: 100px!important;
-    height: 250px!important;
+.fig3{
+    height: 50vh!important;
     
+}
+.fig4{
+    width: 50%!important;
+    height: 50vh!important;
+    
+}
+
+.fig5{
+    width: 50%!important;
+    height: 50vh!important;
+    
+}
+.fig7{
+    width: 100%!important;
+    height: 900px!important;
+    overflow: hidden;
 }
 </style>
 <body>
 
+  <nav>
+    <div class="d-flex nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#Tree" type="button" role="tab" aria-controls="Tree" aria-selected="true">Keywords Treemap</button>
+      <button class="nav-link" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#Ktheme" type="button" role="tab" aria-controls="Ktheme" aria-selected="false">Keywords Themes</button>
+      </div>   
+  </nav>
 
+  <div class="tab-content" id="myTabContent">
+     <!-- togliere overflow-y dai parallel -->
+    <div class="tab-pane fade show active" id="Tree" role="tabpanel" aria-labelledby="nav-one-tab">
+            <iframe class="fig1" src=""></iframe> 
+    </div>
 
-<div class="container">
-
-    <div class="mySlides" style="text-align:center">
-
-        <div class="numbertext">
-            1 / 8
-        </div>
-        <!-- togliere overflow-y dai parallel -->
+    <div class=" tab-pane fade " id="Ktheme" role="tabpanel" aria-labelledby="nav-two-tab">
         <p>
-            Tree-map goes here 
+            Add artwork themes flipcards here
         </p>
+
     </div>
-
-    <div class="mySlides" style="text-align:center">
-        <div class="numbertext">
-            1 / 8
-        </div>
-        <!-- togliere overflow-y dai parallel -->
-        <P>BRIEF INTRODUCTORY</P>
-            <!-- Flipcards with themes      -->
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="colombian.jpg" alt="Avatar" style="width:300px;height:300px;">
-                  </div>
-                  <div class="flip-card-back">
-                    <h1>Lina Dorado & Luis Cantillo</h1>
-                    <p>Architect & Engineer</p>
-                    <p>We love that guy</p>
-                  </div>
-                </div>
-            </div>
-    </div>
-
-
-
-
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    <div class="caption-container">
-        <p id="caption"></p>
-    </div>
+  </div>
 </div>
 
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
     
 </body>
 </html>
