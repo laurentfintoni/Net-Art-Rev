@@ -18,7 +18,9 @@ background-color: #f4cc70;}
     background-color: #20948b;}
 #s4.step{
     background-color: #6ab187;}
-
+#s5.step{
+    background-color: #736ab1;}
+    
     
 
 #scrolly {
@@ -263,8 +265,8 @@ iframe{
     --base: #ff5f5d;
     --black: #191919;
     --primary: #ff5f5d;
-    --secondary: #00ccbf;
-    --ternary: #72f2eb;
+    --secondary: #00ccbeb0;
+    --ternary: #72f2ecad;
     --font-color: #242424;
     --white: #fff;
   }
@@ -331,7 +333,7 @@ iframe{
   }
   
   label input:checked + .menu {
-    box-shadow: 0 0 0 100vw var(--secondary), 0 0 0 100vh var(--secondary);
+    box-shadow: 0 0 0 100vw var(--secondary);
     border-radius: 0;
   }
   
@@ -347,7 +349,7 @@ iframe{
     bottom: 0;
   }
   
-  menu input:checked + .menu .hamburger:before {
+  label input:checked + .menu .hamburger:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
@@ -356,9 +358,12 @@ iframe{
   label input:checked + .menu + ul {
     opacity: 1;
     cursor: pointer;
+    position: fixed;
   }
   
   label ul {
+    
+    list-style:none;
     position: absolute;
     z-index: 600;
     top: 0;
@@ -373,22 +378,29 @@ iframe{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--primary);
+    color: var(--white);
   }
   
   label a {
+      
+      position: inherit!important;
+      font-size: 5em;
+      font-weight: bold;
     margin-bottom: 1em;
+    padding: 0.5em;;
     display: block;
-    color: var(--primary);
+    color: var(--ternary);
     text-decoration: none;
+    background-color: var(--white);
+
+    border-radius: 18px;
    
   }
   label a:hover {
-    background-color: var(--white);
-    color: var(--secondary);
-    padding: 0px 8px;
-    border-radius: 4px;
-    border-bottom-left-radius: 18px;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--ternary);
+    padding: 0.4em;;
     }
   h1 {
     position: absolute;
@@ -398,6 +410,5 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--secondary);
   }
   
