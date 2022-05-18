@@ -22,20 +22,31 @@
 
 <body>
 	
+	
 	<main>
+		
 		<nav class="vh-100">
+			<label >
+				<input type="checkbox">
+				<span class="menu"> <span class="hamburger"></span> </span>
+				<ul>
+				  <li> <a href="#">🏚 Home</a> </li>
+				  <li> <a href="#"> 📋 Documentation</a> </li>
+				  <li> <a href="#">🤓 Team</a> </li>
+				</ul>
+			</label>
 			<section class="wrapper" id="intro">
 				
-				<h1 class="intro__hed">THE INTERNET AND PERSONAL COMPUTERS CHANGED THE WORLD...</h1>
+				<p class="intro__head mainTitle">THE INTERNET AND PERSONAL COMPUTERS CHANGED THE WORLD...</p>
 				<h2>DID THEY HAVE AN IMPACT ON THE MAKE UP OF ART COLLECTIONS?</h2>					
 				<div class="intro__dek">
 					<div class="col-12 position-relative">
-						<div class="col-8">
+						<div class="col-8 pb-3">
 							The advent of the internet and personal computers as tools of communication and creation radically transformed the world we live in over the past 40 years. The impacts of both technologies across various fields and topics have been well documented, including on the art world. 
 					
 							However, discussion in the latter field is often focused on how the internet and computers have transformed art creation as well as the ways in which memory institutions function and interact with their audiences. Slightly less focus has been given to how the technologies may have impacted how artworks are acquired. 
 						</div>
-						<div class="col-8">
+						<div class="col-8 pt-3">
 							Net Art Revolution? aims to look at this particular aspect of the digital revolution by analyzing data from two different NYC-based institutions -- MoMA, representing the more traditional art world, and Rhizome, a smaller institution dedicated to digital-born art and culture, often refered to as net art. Both institutions make data about their collections publicly available -- MoMA in csv and json formats, Rhizome as Linked Open Data -- and this data is used to investigate our primary research question: <span class="Resq">Did the internet and personal computers have an impact on the make up of art collections?</span> 
 						</div>
 						<div class="col time1">
@@ -69,7 +80,7 @@
 
 		<section id="scrolly">
 			<article  class="col-3">
-				<div class="step" data-step="1">
+				<div class="step" data-step="1" id="s1">
 
 					<h3> Making the data sets comparable</h3> 
 
@@ -86,17 +97,21 @@
 						We decided that we would try and align the two collections by looking at key dates: first time an artwork was created, and the first time it was acquired.
 					</p>
 				</div>
-				<div class="step" data-step="2">
+				<div class="step" data-step="2" id="s2">
 					<p><h3>Analysis of artist's genders</h3> </p>
 				</div>
-				<div class="step" data-step="3">
+				<div class="step" data-step="3" id="s3">
 					<p><h3>Analysis of artist's Nationality</h3></p>
 				</div>
-				<div class="step" data-step="4">
-					<p><h3>Analysis of time variable</h3></p>
+				<div class="step" data-step="4" id="s4">
+					<h3>Sewing ouer variables together together:</h3>
+					<p>
+					 [variables list, i.e. Gender, Nat, Dep, maybe explain that dep is introduces as a supportive variable in order to have more granular information on the compositions of the two collections.]
+					</p>
 				</div>
-				<div class="step" data-step="5">
-					<p><h3>Analysis of scraped text</h3></p>
+				<div class="step" data-step="5" id="s5">
+					<h3>Analysis of scraped text:</h3>
+					<p>Galleries and collection making it's not just accumulation, it should be about sense making through artworks and this is done with <b>WORDS</b> and <b> THEMES</b> </p>
 				</div>
 			</article>
 
@@ -128,7 +143,7 @@
 		function handleResize() {
 			// 1. update height of step elements
 			var stepH = Math.floor(window.innerHeight * 0.75);
-			step.style("height", "98vh");
+			step.style("height", "100vh");
 
 			var figureHeight = window.innerHeight / 2;
 			var figureMarginTop = (window.innerHeight - figureHeight) / 2;
