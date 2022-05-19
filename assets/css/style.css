@@ -8,9 +8,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Libre+Franklin:wght@800&family=PT+Serif&display=swap');
+
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #444444;
+  font-size: 24px;
 }
 p, .card-title{
   color: black;
@@ -18,6 +22,8 @@ p, .card-title{
 a {
   color: #5846f9;
   text-decoration: none;
+
+  font-size: 24px;
 }
 
 a:hover {
@@ -25,15 +31,146 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 3.5em;
+}
+h2{
+  font-family: 'PT Serif', serif; 
+  font-size: 2em;  
+
+}
+ h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#spotlight1, #spotlight2{
+#spotlight1, #spotlight2, #start{
   padding: 2em;
   color: white;
   background-color:rgb(82, 157, 255);
 }
+
+.bg-moma{
+
+  background: #7986cb ;
+}
+.bg-rhz{
+
+  background: #9ccc65;
+}
+
+.b-white{
+  border: 4px solid white;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #999;
+}
+
+#wrap {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#blurb {
+  text-align:center;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  
+}
+
+  h1 {
+    color: white;
+  }
+
+.line-reveal {
+  width: 120%;
+  height: 3px;
+  overflow:hidden;
+  position:absolute;
+}
+
+  .overlay {
+    background: black;
+    height: 10px;
+    position: absolute;
+    top:-5px;
+    width: 100%;
+    transform-origin: 100% 0;
+    animation: wipe 3s ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+  }
+  
+  .line {
+    border: 3px dashed white;
+    backface-visibility:hidden;
+  }
+
+
+#line-a {  
+    
+  left: 0;
+  top: 60%;
+  transform-origin: 0 0;
+  transform: rotate(-50deg);
+}
+  
+  .line {
+    border-color: #ff9900;
+  }
+
+
+#line-b {
+  
+  left: 0;
+  bottom: 20%;
+  transform-origin: 0 0;
+  transform: rotate(-5deg);
+}
+  
+  .overlay {
+    animation-delay: .5s;
+  }
+
+  .line {
+    border-color: #ff0099;
+  }
+
+
+#line-c {
+  
+  right: 10%;
+  bottom: 0;
+  transform-origin: 100% 0;
+  transform: rotate(70deg);
+}
+  .overlay {
+    animation-delay: 1s;
+  }
+  
+  .line {
+    border-color: #0099ff;
+  }
+
+
+@keyframes wipe {
+  to {
+    transform: scaleX(0);
+  }
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -174,7 +311,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   padding: 0 3px;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.7);
   white-space: nowrap;
@@ -378,19 +514,16 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 #start .container, #start .container-fluid {
-  padding-top: 84px;
+  padding: 1em;
 }
 #start h1 {
   margin: 0;
-  font-size: 52px;
   font-weight: 700;
-  line-height: 64px;
-  color: #7986cb ;
+  color: white ;
 }
 #start h2 {
-  color: #9ccc65;
+  color: white;
   margin: 10px 0 0 0;
-  font-size: 20px;
 }
 #start .btn-get-started {
   font-family: "Poppins", sans-serif;
@@ -437,12 +570,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 768px) {
   #start h1 {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 3em;
   }
   #start h2 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 3em;
   }
   #start .start-img img {
     width: 60%;
@@ -803,7 +934,7 @@ section {
 # time
 --------------------------------------------------------------*/
 #time{
-  background-color: #7fcc9f7a;}
+  background-color: #a2f0c27a;}
 
 .time .time-item {
   margin-bottom: 30px;
@@ -970,7 +1101,7 @@ section {
 # keywords Details
 --------------------------------------------------------------*/
 #keywords{
-  background-color: #8b7edd7c;
+  background-color: #736ab1a9;
 }
 
 
