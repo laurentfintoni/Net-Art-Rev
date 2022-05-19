@@ -14,7 +14,7 @@ The advent of the internet and personal computers as tools of communication and 
 This project was undertaken by Margherita Donelli, Chiara Catizone, and Laurent Fintoni for the Electronic Publishing and Digital Storytelling (a.y. 2021-2022) final examination, as part of the *Digital Humanities and Digital Knowledge Master's Degree* at the University of Bologna. <br><br>
 All duties - data preparation, cleaning, integration, visualization, research, web dev, design, and storytelling - were shared by all. The notebook details more specific breakdown of work. 
 
-The project was built primarily using Python for data manipulation, [Plotly](https://plotly.com/python/) for data viz, [Scrollama.js](https://github.com/russellgoldenberg/scrollama) and [Miro](https://miro.com/) for storytelling, and brain power for remembering/learning all the different presets and controls in each library 🤣.  
+The project was built primarily using Python for data manipulation, [Plotly](https://plotly.com/python/) for data viz, and [Miro](https://miro.com/) for storytelling, and brain power for remembering/learning all the different presets and controls in each library 🤣.  
 
 **Data**
 
@@ -28,4 +28,4 @@ Rhizome's dataset (AKA the ArtBase), accessed primarily via their [SPARQL endpoi
 MoMA's dataset is released under a [CCO License](https://creativecommons.org/publicdomain/zero/1.0/). <br>
 Rhizome's data is available in [Linked Open Data format](https://artbase.rhizome.org/wiki/About). <br>
 Manipulated data is released under the original licenses. <br>
-Project website and all related material uploaded to the GitHub repository are released under TK TK. <br>
+Project website and all related material uploaded to the GitHub repository are released under a [CC-BY-4.0 License](https://creativecommons.org/licenses/by/4.0/). <br>
