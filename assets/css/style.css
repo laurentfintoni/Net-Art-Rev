@@ -231,11 +231,15 @@ html, body {
   }
   
 .card{
-
+min-width: 100%;
 min-height: 100%;
 }
 .card-img, .card-img-top{
   flex: 111 auto;
+}
+
+.card-body{
+  max-height: 10%;
 }
 
 @keyframes wipe {
