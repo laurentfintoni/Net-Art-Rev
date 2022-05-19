@@ -73,18 +73,21 @@ body {
   background-color: #ffe44e;
 }
 
+.bg-black{
+  background-color: black;
+  color: white ;
+}
+
 p, .card-title{
   color: black;
 }
 a {
-  color: #5846f9;
+  color: white;
   text-decoration: none;
-
-  font-size: 24px;
 }
 
 a:hover {
-  color: #8577fb;
+  color: white;
   text-decoration: none;
 }
 
