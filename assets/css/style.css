@@ -13,7 +13,6 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #444444;
   font-size: 24px;
 }
 
@@ -25,6 +24,11 @@ body {
   padding-top: 2em ;
 
   padding-left: 2em ;
+}
+
+.pT-1{
+  padding-top: 1em ;
+  padding-left: 1em ;
 }
 
 .pT-2{
@@ -44,6 +48,9 @@ body {
 
 }
 
+.gender .section-title h2{
+  color: #68cc65 ;
+}
 .bg-yellow{
   background-color: #ffe44e;
 }
@@ -84,6 +91,11 @@ h2{
 
 .memeS-2{
   background-image: url(https://c.tenor.com/YsX9n2d-tlsAAAAC/thanks-obvious.gif); 
+  background-size: 100% 100%;
+}
+
+.memeS-3{
+  background-image: url(https://i.pinimg.com/236x/cb/10/0f/cb100fbe9459c7ab8575b6cec4513931.jpg); 
   background-size: 100% 100%;
 }
 
