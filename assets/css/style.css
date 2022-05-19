@@ -13,7 +13,6 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #444444;
   font-size: 24px;
 }
 
@@ -49,6 +48,9 @@ body {
 
 }
 
+.gender .section-title h2{
+  color: #68cc65 ;
+}
 .bg-yellow{
   background-color: #ffe44e;
 }
@@ -1401,6 +1403,7 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
+  min-height: 100%;
 }
 .portfolio .portfolio-wrap .portfolio-info {
   opacity: 0;
