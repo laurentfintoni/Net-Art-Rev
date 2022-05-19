@@ -28,4 +28,4 @@ Rhizome's dataset (AKA the ArtBase), accessed primarily via their [SPARQL endpoi
 MoMA's dataset is released under a [CCO License](https://creativecommons.org/publicdomain/zero/1.0/). <br>
 Rhizome's data is available in [Linked Open Data format](https://artbase.rhizome.org/wiki/About). <br>
 Manipulated data is released under the original licenses. <br>
-Project website and all related material uploaded to the GitHub repository are released under TK TK. <br>
+Project website and all related material uploaded to the GitHub repository are released under a [CC-BY-4.0 License](https://creativecommons.org/licenses/by/4.0/). <br>
