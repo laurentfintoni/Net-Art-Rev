@@ -1,8 +1,9 @@
 # Net Art Revolution❓ 
 
-[Project Website](TK)
+[Project Website](https://laurentfintoni.github.io/Net-Art-Rev/)
 
-Jupyter Notebook on [![Binder]](TK)
+Jupyter Notebook on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/laurentfintoni/Net-Art-Rev/61bd6b55250fc81f4e9b18af9c3120b8026286c9?urlpath=lab%2Ftree%2Fnet_art_revolution.ipynb)
+
 
 **Abstract**
 
