@@ -58,10 +58,16 @@ h2{
   font-size: 1.5em;  
 
 }
-.meme{
-  width: 65%;
+.meme1{
+  width: 100%;
   float: right;
 }
+
+.memeS{
+  background-image: url(https://cdn.memes.com/up/54014441562441584/i/1567184755162.jpg); 
+  background-size: 100% 100%;
+}
+
 .ImBlue{
   color: rgb(82, 157, 255);
 }
