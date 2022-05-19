@@ -661,6 +661,27 @@ section {
   margin-bottom: 0;
 }
 
+.section-subtitle {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.section-subtitle h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  position: relative;
+}
+.section-subtitle h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 250px;
+  height: 3px;
+  background: #7381c9;
+  bottom: 0;
+  left: calc(50% - 115px);
+  top: -15px;
+}
+
 /*--------------------------------------------------------------
 # introduction
 --------------------------------------------------------------*/
