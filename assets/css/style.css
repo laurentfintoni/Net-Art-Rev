@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#spotlight, #spotlight2{
+#spotlight1, #spotlight2{
   padding: 2em;
   color: white;
   background-color:rgb(82, 157, 255);
@@ -518,7 +518,7 @@ section {
 # introduction
 --------------------------------------------------------------*/
 #introduction {
-  background-color: #f4cc70a2;
+  background-color: #ffdf9355;
   padding: 120px 0;
 }
 .introduction .content h3 {
@@ -574,7 +574,7 @@ section {
 .counts .counters span {
   font-size: 48px;
   display: block;
-  color: #fff;
+  color: black;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
@@ -582,14 +582,14 @@ section {
   padding: 0;
   margin: 0 0 20px 0;
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.8);
+  color:black;
 }
 
 /*--------------------------------------------------------------
 # gender
 --------------------------------------------------------------*/
 #gender{
-  background-color: #de7a22a9;
+  background-color: #e78c3d67;
 }
 .gender .icon-box {
   
@@ -699,7 +699,7 @@ section {
 # nationality
 --------------------------------------------------------------*/
 #nationality{
-  background-color: #20948ab5;
+  background-color: #44d1c57d;
 }
 .nationality .icon-box h4 {
   font-size: 20px;
@@ -803,7 +803,7 @@ section {
 # time
 --------------------------------------------------------------*/
 #time{
-  background-color: #6ab188af;}
+  background-color: #7fcc9f7a;}
 
 .time .time-item {
   margin-bottom: 30px;
@@ -970,7 +970,7 @@ section {
 # keywords Details
 --------------------------------------------------------------*/
 #keywords{
-  background-color: #736ab1a9;
+  background-color: #8b7edd7c;
 }
 
 
