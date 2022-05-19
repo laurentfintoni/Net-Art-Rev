@@ -58,6 +58,10 @@ h2{
   font-size: 1.5em;  
 
 }
+.meme{
+  width: 65%;
+  float: right;
+}
 .ImBlue{
   color: rgb(82, 157, 255);
 }
