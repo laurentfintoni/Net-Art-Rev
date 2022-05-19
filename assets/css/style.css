@@ -28,10 +28,15 @@ body {
 }
 
 .pT-2{
-  padding-top: 6em ;
-
+  padding-top: 5em ;
   padding-left: 2em ;
 }
+
+.pT-3{
+  padding-top: 4em ;
+  padding-left: 2em ;
+}
+
 
 .bg-green{
   background:  #68cc65;
@@ -71,6 +76,11 @@ h2{
 
 .memeS{
   background-image: url(https://cdn.memes.com/up/54014441562441584/i/1567184755162.jpg); 
+  background-size: 100% 100%;
+}
+
+.memeS-2{
+  background-image: url(https://c.tenor.com/YsX9n2d-tlsAAAAC/thanks-obvious.gif); 
   background-size: 100% 100%;
 }
 
@@ -696,6 +706,7 @@ section {
   text-transform: uppercase;
   position: relative;
 }
+/* 
 .section-subtitle h2::before {
   content: "";
   position: absolute;
@@ -706,7 +717,7 @@ section {
   bottom: 0;
   left: calc(50% - 115px);
   top: -15px;
-}
+} */
 
 /*--------------------------------------------------------------
 # introduction
@@ -1470,4 +1481,27 @@ section {
 }
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+
+
+@counter-style repeating-emoji {
+  system: cyclic;
+  symbols: "\1F431" "\1F436" "\1F984"; // unicode code point
+  suffix: " ";
+}
+
+.repeating-counter-rule {
+  list-style-type: repeating-emoji;
+}
+
+ul {
+  color: black;
+}
+
+hr {
+  opacity: 1;
+  color: black;
+  size: 1em;
+  width: 50%;
+  margin: 20px auto;
 }
