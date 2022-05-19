@@ -40,6 +40,14 @@ body {
   padding-left: 2em ;
 }
 
+.pT-3-l{
+  padding-top: 4em ;
+  padding-right: 2em ;
+}
+
+.bg-blue{
+  background-color: rgb(82, 157, 255);
+}
 .bg-pink{
   background: #d683ff;
   color:  rgb(255, 230, 107);
@@ -759,7 +767,7 @@ section {
 # introduction
 --------------------------------------------------------------*/
 #introduction {
-  background-color: #f6ef7494;
+  background-color: #ffffff94;
 }
 .introduction .content h3 {
   font-weight: 600;
