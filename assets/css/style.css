@@ -41,16 +41,18 @@ body {
   padding-left: 2em ;
 }
 
+.bg-pink{
+  background: #d683ff;
+  color:  rgb(255, 230, 107);
 
+}
 .bg-green{
   background:  #68cc65;
   color:  #f27cf0;
 
 }
 
-.gender .section-title h2{
-  color: #68cc65 ;
-}
+
 .bg-yellow{
   background-color: #ffe44e;
 }
@@ -684,7 +686,6 @@ min-height: 100%;
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
   overflow: hidden;
 }
 
@@ -693,15 +694,14 @@ section {
 }
 
 .section-title {
+  margin-bottom: 0;
+  padding: 2em;
   text-align: center;
   padding-bottom: 30px;
 }
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
   position: relative;
 }
 .section-title h2::after {
@@ -710,7 +710,6 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #7381c9;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -724,7 +723,6 @@ section {
 }
 .section-subtitle h2 {
   font-size: 25px;
-  text-transform: uppercase;
   position: relative;
 }
 /* 
@@ -744,7 +742,7 @@ section {
 # introduction
 --------------------------------------------------------------*/
 #introduction {
-  background-color: #e3cd505f;
+  background-color: #f6ef7494;
 }
 .introduction .content h3 {
   font-weight: 600;
@@ -814,7 +812,7 @@ section {
 # gender
 --------------------------------------------------------------*/
 #gender{
-  background-color: #f6a66185;
+  background-color: #fa757585;
 }
 .gender .icon-box {
   
