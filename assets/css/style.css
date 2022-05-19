@@ -22,8 +22,18 @@ body {
 }
 
 .pT{
-  padding-top: 2em;
+  padding-top: 2em ;
+
+  padding-left: 2em ;
 }
+
+.bg-green{
+  background:  #68cc65;
+  color:  #f27cf0;
+
+}
+
+
 p, .card-title{
   color: black;
 }
@@ -756,7 +766,7 @@ section {
 # gender
 --------------------------------------------------------------*/
 #gender{
-  background-color: #e78c3d67;
+  background-color: #f6a66185;
 }
 .gender .icon-box {
   

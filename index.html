@@ -231,9 +231,23 @@
           </section>
         </div>
       </div>
-      <div>
-        <h3>Now Rhizome's collection is 1/10 of MoMA's and the artists are 50%. Better!</h3>
-        <p>So how can we answer our research question? Well there are two primary variables in our data - gender and nationality - so let's use these as lenses for investigation.</p>
+      <div class="row ">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <div class="col8">
+            <div class="bg-green p-3">
+              <h3>Now Rhizome's collection is 1/10 of MoMA's and the artists are 50%. Better!</h3>
+            </div>
+            <div class="bg-white p-3">
+              <p>So how can we answer our research question? Well there are two primary variables in our data - gender and nationality - so let's use these as lenses for investigation.</p>
+            </div>
+          </div>
+          <div class="col-2"> 
+            Here goes an image 
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
       </div>
       
     </section><!-- End data Section -->
@@ -299,83 +313,104 @@
               <!-- ======= empty col ======= -->
             </div>
             <div class="col-4">
-              <!-- ======= empty col ======= -->
+              <p>Rhizome has a higher percentage of female artists, MoMA has a lower percetange of male but higher collectives. Both have very low NB representation</p>
             </div>
             <div class="col-4" >
                 <iframe class="embed-responsive-item" src="Plotly_embeds/moma_sampled_pie.html" height="600" width="100%"></iframe>
             </div>
-          </div> 
-           <div class="col-2">
+            <div class="col-2">
             <!-- ======= empty col ======= -->
-            </div>
-          <div class="row">
-            <div class="col-6" >
-              <div class="embed-responsive embed-responsive-1by1">
-                <iframe class="embed-responsive-item" src="Plotly_embeds/rhz_full_pie.html" height="600" width="100%"></iframe>
-              </div>
-            </div>
-            <div class="col-6">
-              <!-- ======= empty col ======= -->
             </div>
           </div> 
 
-        <div class="row text-center pt-5">
-            <h3>🧑‍🤝‍🧑 Gender Representation in Rhizome and MoMA (sampled) 🧑‍🤝‍🧑</h3>
-          <div class="col-6">
-            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"  src="Plotly_embeds/moma_full_pie.html" height="600" width="600"></iframe>
+          <div class="row">
+            <div class="col-2">
+              <!-- ======= empty col ======= -->
+            </div>
+            <div class="col-4">
+              <iframe class="embed-responsive-item" src="Plotly_embeds/rhz_full_pie.html" height="600" width="100%"></iframe>
+            </div>
+            <div class="col-4" >
+              <p>It looks like collectives are more common in the years after the internet, but how are the different genders represented within them?</p>
+            </div>
+            <div class="col-2">
+            <!-- ======= empty col ======= -->
+            </div>
+          </div> 
+
+          <div class="section-subtitle pt-5">
+            <h2>🧑‍🤝‍🧑 Who Takes Part in Collectives & Collaborations? 🧑‍🤝‍🧑</h2>
           </div>
-          <div class="col-6">
-            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"  src="Plotly_embeds/rhz_full_pie.html" height="600" width="600"></iframe>
-          </div>  
-          <p>Rhizome has a higher percentage of female artists, MoMA has a lower percetange of male but higher collectives. Both have very low NB representation</p>        
-        </div>
-        <div class="row text-center">
-          <h4>It looks like collectives are more common in the years after the internet, but how are the different genders represented within them?</h4>
-          
-          <hr>
-          
-          <h3>
-            Who Takes Part in Collectives & Collaborations?
-          </h3>
-          <div class="col-6">
-            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"  src="Plotly_embeds/moma_sunburst.html" height="600" width="600"></iframe>
+
+          <div class="row">
+            <div class="col-2">
+              <!-- ======= empty col ======= -->
+            </div>
+            <div class="col-4">
+              <p>MoMA features primarily male collectives and collaborations, while Rhizome has more mixed gender collectives. However MoMA has one collective/collaboration w/ a NB artist.
+              </p>
+            </div>
+            <div class="col-4" >
+                <iframe class="embed-responsive-item" src="Plotly_embeds/moma_sunburst.html" height="600" width="100%"></iframe>
+            </div>
+            <div class="col-2">
+            <!-- ======= empty col ======= -->
+            </div>
+          </div> 
+
+          <div class="row">
+            <div class="col-2">
+              <!-- ======= empty col ======= -->
+            </div>
+            <div class="col-4">
+              <iframe class="embed-responsive-item" src="Plotly_embeds/rhz_sunburst.html" height="600" width="100%"></iframe>
+            </div>
+            <div class="col-4" >
+              <p>
+                So what happens if we look at the MoMA dataset in full, but using 1983 - the year that the TCP/IP protocol became widely available as well as the year that Rhizome's first artwork was created - as a pivot date?
+              </p>
+            </div>
+            <div class="col-2">
+            <!-- ======= empty col ======= -->
+            </div>
+          </div> 
+
+          <div class="section-subtitle pt-5">
+            <h2>🧑‍🤝‍🧑  Gender Representation in MoMA before and after the Internet 🧑‍🤝‍🧑</h2>
           </div>
-          <div class="col-6">
-            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"  src="Plotly_embeds/rhz_sunburst.html" height="600" width="600"></iframe>
-          </div>  
-        </div>
-        <div class="row text-center">
-          <p>>MoMA features primarily male collectives and collaborations, while Rhizome has more mixed gender collectives. However MoMA has one collective/collaboration w/ a NB artist.
-          </p>
-        </div>
-        <div class="row text-center">
-          <p>
-            So what happens if we look at the MoMA dataset in full, but using 1983 - the year that the TCP/IP protocol became widely available as well as the year that Rhizome's first artwork was created - as a pivot date?
-          </p>
-          
-          <hr>
-          
-          <h3>
-            Gender Representation in MoMA before and after the Internet          
-          </h3>
-          <p>
-            correct size embeds
-          </p>
-          <div class="col-6">
-            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"  src="Plotly_embeds/moma_b4_pie.html" height="600" width="600"></iframe>
-          </div>
-          <div class="col-6">
-            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"  src="Plotly_embeds/moma_after_pie.html" height="600" width="600"></iframe>
-          </div>  
-          <p>After 1983 the MoMA collection appears to be evening out in gender representation with more women, more collectives, and the appearance of the first non binary artists.
-            
-          </p>
-        </div>
-        <div class="row text-center">
-          <p>
-            Oh, maybe there was a change. But! MoMA has 8 different departments and they're not all related to computers and the internet. So we selected four departments that are more closely aligned to net art: Photography, Media & Performance, Films, and Drawing & Print.
-          </p>
-          <hr>
+
+          <div class="row">
+            <div class="col-2">
+              <!-- ======= empty col ======= -->
+            </div>
+            <div class="col-4">
+              <p>After 1983 the MoMA collection appears to be evening out in gender representation with more women, more collectives, and the appearance of the first non binary artists.
+              </p>
+            </div>
+            <div class="col-4" >
+                <iframe class="embed-responsive-item" src="Plotly_embeds/moma_b4_pie.html" height="600" width="100%"></iframe>
+            </div>
+            <div class="col-2">
+            <!-- ======= empty col ======= -->
+            </div>
+          </div> 
+
+          <div class="row">
+            <div class="col-2">
+              <!-- ======= empty col ======= -->
+            </div>
+            <div class="col-4">
+              <iframe class="embed-responsive-item" src="Plotly_embeds/moma_after_pie.html" height="600" width="100%"></iframe>
+            </div>
+            <div class="col-4" >
+              <p>
+                Oh, maybe there was a change. But! MoMA has 8 different departments and they're not all related to computers and the internet. So we selected four departments that are more closely aligned to net art: Photography, Media & Performance, Films, and Drawing & Print.
+              </p>
+            </div>
+            <div class="col-2">
+            <!-- ======= empty col ======= -->
+            </div>
+          </div> 
           
           <h3>
             Gender Representation in MoMA departments before and after the Internet
