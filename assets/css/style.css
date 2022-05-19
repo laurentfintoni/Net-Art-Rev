@@ -58,7 +58,16 @@ body {
   color:  #ffffff;
 
 }
+.bg-orange{
+  background:  #f9b873;
+  color:  rgb(71, 2, 131);
 
+}
+
+.bg-red{
+  background-color: red;
+  color: white ;
+}
 
 .bg-yellow{
   background-color: #ffe44e;
@@ -1051,7 +1060,7 @@ section {
 # time
 --------------------------------------------------------------*/
 #time{
-  background-color: #a2f0c27a;}
+  background-color: #85ff6d7a;}
 
 .time .time-item {
   margin-bottom: 30px;
