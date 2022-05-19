@@ -82,12 +82,12 @@ p, .card-title{
   color: black;
 }
 a {
-  color: white;
+  color: #f27cf0;
   text-decoration: none;
 }
 
 a:hover {
-  color: white;
+  color: #f27cf0;
   text-decoration: none;
 }
 
@@ -1545,25 +1545,6 @@ section {
   padding: 0;
 }
 
-
-@counter-style repeating-emoji {
-  system: cyclic;
-  symbols: "\1F4F7" "\1F3A5" "\1F483"; // unicode code point
-  suffix: " ";
-}
-
-.repeating-counter-rule {
-  list-style-type: repeating-emoji;
-}
-
-ul {
-  color: black;
-}
-
-hr {
-  opacity: 1;
-  color: black;
-  size: 1em;
-  width: 50%;
-  margin: 20px auto;
+.asterisk {
+  font-size: small;
 }
