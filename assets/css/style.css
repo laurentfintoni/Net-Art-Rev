@@ -63,6 +63,10 @@ h2{
   border: 4px solid white;
 }
 
+.b-white-r{
+  border-right: 4px solid white;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -88,6 +92,10 @@ html, body {
   
 }
 
+.mode-question{
+  writing-mode: tb;
+}
+
   h1 {
     color: white;
   }
@@ -100,7 +108,7 @@ html, body {
 }
 
   .overlay {
-    background: black;
+    background: white;
     height: 10px;
     position: absolute;
     top:-5px;
@@ -114,7 +122,6 @@ html, body {
   }
   
   .line {
-    border: 3px dashed white;
     backface-visibility:hidden;
   }
 
@@ -126,10 +133,6 @@ html, body {
   transform-origin: 0 0;
   transform: rotate(-50deg);
 }
-  
-  .line {
-    border-color: #ff9900;
-  }
 
 
 #line-b {
@@ -144,9 +147,6 @@ html, body {
     animation-delay: .5s;
   }
 
-  .line {
-    border-color: #ff0099;
-  }
 
 
 #line-c {
@@ -156,13 +156,18 @@ html, body {
   transform-origin: 100% 0;
   transform: rotate(70deg);
 }
+
+#line-d {
+  
+  left: -92%;
+  top: 0;
+  transform-origin: 100% 0;
+  transform: rotate(280deg);
+}
   .overlay {
     animation-delay: 1s;
   }
   
-  .line {
-    border-color: #0099ff;
-  }
 
 
 @keyframes wipe {
