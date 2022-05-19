@@ -101,6 +101,11 @@ h2{
   background-size: 100% 100%;
 }
 
+.memeS-4{
+  background-image: url(https://i.imgflip.com/wgt6r.jpg); 
+  background-size: 100% 100%;
+}
+
 .ImBlue{
   color: rgb(82, 157, 255);
 }
@@ -1396,6 +1401,7 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
+  min-height: 100%;
 }
 .portfolio .portfolio-wrap .portfolio-info {
   opacity: 0;
