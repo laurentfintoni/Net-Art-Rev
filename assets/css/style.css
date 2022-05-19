@@ -249,6 +249,10 @@ min-height: 100%;
   max-height: 10%;
 }
 
+.carousel-caption {
+    background-color: rgba(192,192,192,0.3);
+}
+
 @keyframes wipe {
   to {
     transform: scaleX(0);
