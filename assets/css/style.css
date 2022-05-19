@@ -95,11 +95,17 @@ h1{
   font-family: 'Libre Franklin', sans-serif;
   font-size: 2em;
 }
+
 h2{
   font-family: 'PT Serif', serif; 
   font-size: 1.5em;  
-
 }
+
+h2.spotlight{
+  font-family: 'Libre Franklin', sans-serif; 
+  font-size: 1.5em;  
+}
+
 .meme1{
   width: 100%;
   float: right;
