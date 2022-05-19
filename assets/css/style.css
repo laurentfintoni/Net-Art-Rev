@@ -39,6 +39,9 @@ body {
 
 }
 
+.bg-yellow{
+  background-color: #ffe44e;
+}
 
 p, .card-title{
   color: black;
@@ -83,7 +86,7 @@ h2{
 
 #spotlight1, #spotlight2, #start{
   padding: 2em;
-  color: white;
+  color:  #f27cf0;
   background-color:rgb(82, 157, 255);
 }
 
@@ -205,7 +208,13 @@ html, body {
     animation-delay: 1s;
   }
   
+.card{
 
+min-height: 100%;
+}
+.card-img, .card-img-top{
+  flex: 111 auto;
+}
 
 @keyframes wipe {
   to {
@@ -653,7 +662,7 @@ html, body {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 100px 0;
+  padding: 80px 0;
   overflow: hidden;
 }
 
@@ -712,7 +721,7 @@ section {
 # introduction
 --------------------------------------------------------------*/
 #introduction {
-  background-color: #ffdf9363;
+  background-color: #e3cd505f;
 }
 .introduction .content h3 {
   font-weight: 600;
@@ -1312,6 +1321,11 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
+.portfolio{
+  background-color: #736ab1;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -1471,3 +1485,4 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+
