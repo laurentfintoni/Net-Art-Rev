@@ -268,7 +268,7 @@
 /** Check size */
 
 function checkSize() {
-  if (window.innerWidth < 760) {
+  if (window.innerWidth < 1024) {
     screenSizeModal = bootstrap.Modal.getOrCreateInstance(document.querySelector("#minScreenModal"));
     screenSizeModal.show();
   } else {
