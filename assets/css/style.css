@@ -1381,6 +1381,10 @@ section {
   text-decoration: none;
 }
 
+#footer a {
+  color: white;
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio

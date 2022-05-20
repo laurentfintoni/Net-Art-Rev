@@ -264,3 +264,16 @@
   });
 
 })()
+
+/** Check size */
+
+function checkSize() {
+  if (window.innerWidth < 760) {
+    screenSizeModal = bootstrap.Modal.getOrCreateInstance(document.querySelector("#minScreenModal"));
+    screenSizeModal.show();
+  } else {
+    screenSizeModal = bootstrap.Modal.getOrCreateInstance(document.querySelector("#minScreenModal"));
+    screenSizeModal.hide();
+  }
+}
+window.addEventListener("resize", checkSize);
